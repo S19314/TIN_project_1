@@ -95,7 +95,14 @@ main h2{
     background-color: #ecf0f1;
 }
 
-
+.table-list td{
+    width: 20%;
+}
+/*
+.list-opis{
+    width: 20%;
+}
+*/
 .list-actions{
     margin: 0;
     text-align: center;
@@ -106,9 +113,70 @@ main h2{
 .list-actions li{
     display: inline-block;
 }
-    footer{
-    text-align: center;    
+
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete{
+    display: inline; /* inline-block; */
+    width: 75px;
+    padding: 0.25rem 0.5rem;
+    
 }
 
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete,
+.button-add {
+    border: none;
+    border-radius: 5px;
+    color:  white; 
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+}
 
+.list-actions-button-details,
+.list-actions-button-edit{
+    margin-right: 1rem;
+}
 
+.list-actions-button-details{
+    background-color:  #2980b9;
+}
+.list-actions-button-details:hover{
+    background-color: #3498db;
+}
+
+.list-actions-button-edit{
+    background-color: #f39c12;
+}
+.list-actions-button-edit:hover{
+    background-color: #f1c40f;
+}
+
+.list-actions-button-delete{
+    background-color: #c0392b;
+}
+
+.list-actions-button-delete:hover{
+    background-color: #e74c32;
+}
+
+.button-add{
+    padding: 0.5rem 1rem;
+}
+.button-add{
+    background-color: #27ae60;
+}
+.button-add:hover{
+    background-color: #2ecc71;
+}
+
+.list-foto{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+ }
+footer{
+    text-align: center;    
+}
