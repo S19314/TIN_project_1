@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stan twojego komputera</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Stan twojego komputera</h1>
+        <img src="../images/logo.png" alt="Stan twojego komputera logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Elementy komputerza</a></li>
+            <li><a href="">Komputery</a></li>
+            <li><a href="">Zestawy elementów komputera</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Nowy element komputerowy</h1>
+        <form>
+            <div>
+                <label for="nazwa">Nazwa:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+                <input type="text" name="nazwa" id="nazwa" />
+            </div>
+            <div>
+                <label for="opis">Opis:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+                <!-- <input type="text" name="opis" id="opis" /> -->
+                <textarea cols="30" rows="8" name="opis" id="opis"></textarea>
+            </div>
+            <div>
+                <label for="foto">Foto:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+                <input type="file" name="foto" id="foto" />
+            </div>
+            <div>
+                <input type="submit" value="Dodaj" />
+                <a href="">Anuluj</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Vladyslav Domariev, S19314.
+    </footer>
+</body>
+
+</html>
