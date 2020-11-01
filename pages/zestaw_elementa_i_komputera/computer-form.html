@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stan twojego komputera</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Stan twojego komputera</h1>
+        <img src="../../images/logo.png" alt="Stan twojego komputera logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Elementy komputerza</a></li>
+            <li><a href="" class="active">Komputery</a></li>
+            <li><a href="">Zestawy elementów komputera</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Nowy komputer</h1>
+        <form>
+            <!-- Добавить класс и в CSS добавить растояние между элементами-->
+            <div>
+                <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+                <input type="text" name="model" id="model" value="" disabled />
+            </div>
+            <div>
+                <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
+                        aria-label="required">*</abbr></abbr></label>
+                <!-- <input type="text" name="opis" id="opis" /> -->
+                <input type="text" name="systemOperacyjny" id="systemOperacyjny"></textarea>
+            </div>
+            <div>
+                <label for="typPolaczenia">Typ polaczenia:<abbr title="required"
+                        aria-label="required">*</abbr></abbr></label>
+
+                <!--         <input type="text" name="typComputera" id="typComputera" /> -->
+                <select required name="typPolaczenia">
+                    <option selected disabled>Typ Komputera</option>
+                    <option value="Bezprzewodowy">Bezprzewodowy</option>
+                    <option value="Przewodowy">Przewodowy</option>
+                </select>
+            </div>
+            <div>
+                <!-- class="container-data-stworzenia"-->
+                <div>
+                    <label for="dataDay">Dzień stworzenia:<abbr title="required" aria-label="required"></abbr></label>
+                    <input type="number" min="1" max="31" name="dataDay" />
+                    <!-- </div>
+                <div>
+                -->
+                    <label for="dataMonth">Mięsiąc stworzenia:<abbr title="required"
+                            aria-label="required"></abbr></label>
+                    <input type="number" min="1" max="12" name="dataMonth" />
+                    <!-- </div>
+                <div>
+                -->
+                    <label for="dataYear">Rok stworzenia:<abbr title="required" aria-label="required"></abbr></label>
+                    <input type="number" name="dataYear" />
+
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Dodaj" />
+                <a href="">Anuluj</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Vladyslav Domariev, S19314.
+    </footer>
+</body>
+
+</html>
