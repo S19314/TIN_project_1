@@ -24,19 +24,19 @@
 
     <main>
         <h1>Nowy komputer</h1>
-        <form>
+        <form class="form">
             <!-- Добавить класс и в CSS добавить растояние между элементами-->
-            <div>
+            <div class="form-group">
                 <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
                 <input type="text" name="model" id="model" value="" />
             </div>
-            <div>
+            <div class="form-group">
                 <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
                         aria-label="required">*</abbr></abbr></label>
                 <!-- <input type="text" name="opis" id="opis" /> -->
                 <input type="text" name="systemOperacyjny" id="systemOperacyjny"></textarea>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="typKomputera">Typ Komputera:<abbr title="required"
                         aria-label="required">*</abbr></abbr></label>
 
@@ -52,7 +52,7 @@
                     <option value="Komputer kieszonkowe">Komputer kieszonkowe</option>
                 </select>
             </div>
-            <div>
+            <div class="form-group">
                 <!-- class="container-data-stworzenia"-->
                 <div>
                     <label for="dataDay">Dzień stworzenia:<abbr title="required" aria-label="required"></abbr></label>
@@ -71,9 +71,9 @@
 
                 </div>
             </div>
-            <div>
-                <input type="submit" value="Dodaj" />
-                <a href="">Anuluj</a>
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit" />
+                <a href="" class="form-button-cancel">Anuluj</a>
             </div>
         </form>
     </main>
