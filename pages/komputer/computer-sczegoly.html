@@ -43,9 +43,14 @@
 
                 <!--         <input type="text" name="typComputera" id="typComputera" /> -->
                 <select required disabled name="typKomputera">
-                    <option disabled>Typ Komputera</option>
-                    <option value="Bezprzewodowy">Bezprzewodowy</option>
-                    <option selected value="Przewodowy">Przewodowy</option>
+                    <option selected disabled>Typ Komputera</option>
+                    <option value="Komputer stacjonarny" selected>Komputer stacjonarny</option>
+                    <option value="Monoblok">Monoblok</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Netbook">Netbook</option>
+                    <option value="Tablet PC">Tablet PC</option>
+                    <option value="Nettop">Nettop</option>
+                    <option value="Komputer kieszonkowe">Komputer kieszonkowe</option>
                 </select>
             </div>
             <div>
@@ -72,6 +77,50 @@
                 <a href="">Anuluj</a>
             </div>
         </form>
+        <div>
+            <h1>Szczegóły zestawa elementa i komputera</h1>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>
+                            Nazwa elementu
+                        </th>
+                        <th>
+                            Aktualna temperatura elementa w kopmputerze
+                        </th>
+                        <th>
+                            Procenty wykorzystanych procentów elementa komputerzem
+                        </th>
+                        <th>
+                            Aktualna szybkość przekazania dannych między elementem komputera a komputerą
+                        </th>
+                        <th>
+                            Typ połączenia
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Gigabyte GeForce GTX 1660 SUPER OC 6GB GDDR6
+                        </td>
+                        <td>
+                            56 stopni
+                        </td>
+                        <td>
+                            15%
+                        </td>
+                        <td>
+                            0.4 Mb/s
+                        </td>
+                        <td>
+                            Przewodowa
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
     </main>
     <footer>
         Vladyslav Domariev, S19314.
