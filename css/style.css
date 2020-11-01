@@ -80,6 +80,7 @@ main h2{
     border-collapse: collapse;
     color: #2c3e50;
     width: 100%;
+    
 }
 .table-list,
 .table-list th,
@@ -97,6 +98,7 @@ main h2{
 
 .table-list td{
     width: 20%;
+    height: 6rem;
 }
 /*
 .list-opis{
@@ -112,12 +114,13 @@ main h2{
 
 .list-actions li{
     display: inline-block;
+    margin: 0.3rem;
 }
 
 .list-actions-button-details,
 .list-actions-button-edit,
 .list-actions-button-delete{
-    display: inline; /* inline-block; */
+    display: inline-block; 
     width: 75px;
     padding: 0.25rem 0.5rem;
     
@@ -136,7 +139,7 @@ main h2{
     text-align: center;
     font-size: 0.8rem;
 }
-
+.list-actions-button-delete,
 .list-actions-button-details,
 .list-actions-button-edit{
     margin-right: 1rem;
@@ -175,6 +178,7 @@ main h2{
 .form-button-submit{
     background-color: #27ae60;
 }
+
 .button-add:hover,
 .form-button-submit:hover{
     background-color: #2ecc71;
