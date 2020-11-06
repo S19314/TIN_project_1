@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stan twojego komputera</title>
     <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/png" />
 </head>
 
 <body>
@@ -26,16 +27,23 @@
     <main>
         <h1>Nowy komputer</h1>
         <form class="form">
-            <!-- Добавить класс и в CSS добавить растояние между элементами-->
             <div class="form-group">
                 <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
-                <input type="text" name="model" id="model" value="" />
+                <select name="model" id="model">
+                    <option selected disabled>Model komputera</option>
+                    <option value="Jaguar 3000">Jaguar 3000</option>
+                    <option value="Actina by Corsair">Actina by Corsair</option>
+                    <option value="Acer Aspire XC-330 AMD">Acer Aspire XC-330 AMD </option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
                         aria-label="required">*</abbr></abbr></label>
-                <!-- <input type="text" name="opis" id="opis" /> -->
-                <input type="text" name="systemOperacyjny" id="systemOperacyjny"></textarea>
+                <select name="systemOperacyjny" id="systemOperacyjny">
+                    <option selected disabled>System operacyjny</option>
+                    <option value="Tornado 6.1.0">Tornado 6.1.0</option>
+                    <option value=""></option>
+                </select>>
             </div>
             <div class="form-group">
                 <label for="typKomputera">Typ Komputera:<abbr title="required"
@@ -54,22 +62,9 @@
                 </select>
             </div>
             <div class="form-group">
-                <!-- class="container-data-stworzenia"-->
                 <div>
-                    <label for="dataDay">Dzień stworzenia:<abbr title="required" aria-label="required"></abbr></label>
-                    <input type="number" min="1" max="31" name="dataDay" />
-                    <!-- </div>
-                <div>
-                -->
-                    <label for="dataMonth">Mięsiąc stworzenia:<abbr title="required"
-                            aria-label="required"></abbr></label>
-                    <input type="number" min="1" max="12" name="dataMonth" />
-                    <!-- </div>
-                <div>
-                -->
-                    <label for="dataYear">Rok stworzenia:<abbr title="required" aria-label="required"></abbr></label>
-                    <input type="number" name="dataYear" />
-
+                    <label for="datatime">Data stworzenia:<abbr title="required" aria-label="required"></abbr></label>
+                    <input type="datetime-local" name="datatime" />
                 </div>
             </div>
             <div class="form-buttons">

@@ -1,5 +1,5 @@
 html{
-    background-color: #6366B2; //#ecf0f1;
+    background-color: #6366B2; /* #ecf0f1; */
     font-family: sans-serif;
 }
 body {
@@ -8,7 +8,7 @@ body {
 header,
 main,
 footer {
-    background-color: #D0ECFF;// white;
+    background-color: #D0ECFF; /* white; */
 }
 
 header,
@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #9BD0A8 ;// #d35400;
+    background-color: #9BD0A8 ; /* #d35400; */
     color: #ecf0f1;
 }
 
