@@ -1,5 +1,5 @@
 html{
-    background-color: #ecf0f1;
+    background-color: #6366B2; //#ecf0f1;
     font-family: sans-serif;
 }
 body {
@@ -8,7 +8,7 @@ body {
 header,
 main,
 footer {
-    background-color: white;
+    background-color: #D0ECFF;// white;
 }
 
 header,
@@ -18,10 +18,16 @@ nav {
     margin: 1rem;
 }
 
-header, 
+header{
+    background-color: white;
+    color: black;
+}
 footer{
     background-color: #34495e;
     color: white;
+}
+header, 
+footer{
     padding: 1rem;
 }
 
@@ -30,10 +36,10 @@ header {
 }
 
 header h1 {
-    float: left;
+    float: right;
 }
 header img {
-    float: right;
+    float: left;
 }
 
 nav {
@@ -58,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #d35400;
+    background-color: #9BD0A8 ;// #d35400;
     color: #ecf0f1;
 }
 
