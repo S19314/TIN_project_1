@@ -246,6 +246,7 @@ textarea{
 
 .form-group{
     margin-bottom: 1rem;
+    /* width: ; */
 }
 
 abbr[title='required']{
