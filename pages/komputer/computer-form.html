@@ -27,52 +27,51 @@
     <main>
         <h1>Nowy komputer</h1>
         <form class="form">
-            <div class="form-group">
-                <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
-                <select name="model" id="model">
-                    <option selected disabled>Model komputera</option>
-                    <option value="Jaguar 3000">Jaguar 3000</option>
-                    <option value="Actina by Corsair">Actina by Corsair</option>
-                    <option value="Acer Aspire XC-330 AMD">Acer Aspire XC-330 AMD </option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
-                        aria-label="required">*</abbr></abbr></label>
-                <select name="systemOperacyjny" id="systemOperacyjny">
-                    <option selected disabled>System operacyjny</option>
-                    <option value="Tornado 6.1.0">Tornado 6.1.0</option>
-                    <option value="Windows 7">Windows 7</option>
-                    <option value="Windows 10">Windows 10</option>
-                    <option value="Windows NT 3.5 Server">Windows NT 3.5 Server</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="typKomputera">Typ Komputera:<abbr title="required"
-                        aria-label="required">*</abbr></abbr></label>
+            <!-- <div class="form-group"> -->
+            <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+            <select name="model" id="model">
+                <option selected disabled>Model komputera</option>
+                <option value="Jaguar 3000">Jaguar 3000</option>
+                <option value="Actina by Corsair">Actina by Corsair</option>
+                <option value="Acer Aspire XC-330 AMD">Acer Aspire XC-330 AMD </option>
+            </select>
+            <!-- </div>
+            <div class="form-group"> -->
+            <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
+                    aria-label="required">*</abbr></abbr></label>
+            <select name="systemOperacyjny" id="systemOperacyjny">
+                <option selected disabled>System operacyjny</option>
+                <option value="Tornado 6.1.0">Tornado 6.1.0</option>
+                <option value="Windows 7">Windows 7</option>
+                <option value="Windows 10">Windows 10</option>
+                <option value="Windows NT 3.5 Server">Windows NT 3.5 Server</option>
+            </select>
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+            <label for="typKomputera">Typ Komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
 
-                <!--         <input type="text" name="typComputera" id="typComputera" /> -->
-                <select required name="typKomputera">
-                    <option selected disabled>Typ Komputera</option>
-                    <option value="Komputer stacjonarny">Komputer stacjonarny</option>
-                    <option value="Monoblok">Monoblok</option>
-                    <option value="Laptop">Laptop</option>
-                    <option value="Netbook">Netbook</option>
-                    <option value="Tablet PC">Tablet PC</option>
-                    <option value="Nettop">Nettop</option>
-                    <option value="Komputer kieszonkowe">Komputer kieszonkowe</option>
-                </select>
+            <!--         <input type="text" name="typComputera" id="typComputera" /> -->
+            <select required name="typKomputera">
+                <option selected disabled>Typ Komputera</option>
+                <option value="Komputer stacjonarny">Komputer stacjonarny</option>
+                <option value="Monoblok">Monoblok</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Netbook">Netbook</option>
+                <option value="Tablet PC">Tablet PC</option>
+                <option value="Nettop">Nettop</option>
+                <option value="Komputer kieszonkowe">Komputer kieszonkowe</option>
+            </select>
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+            <div>
+                <label for="datatime">Data stworzenia:<abbr title="required" aria-label="required"></abbr></label>
+                <input type="datetime-local" name="datatime" />
             </div>
-            <div class="form-group">
-                <div>
-                    <label for="datatime">Data stworzenia:<abbr title="required" aria-label="required"></abbr></label>
-                    <input type="datetime-local" name="datatime" />
-                </div>
-            </div>
-            <div class="form-buttons">
-                <input type="submit" value="Dodaj" class="form-button-submit" />
-                <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
-            </div>
+            <!-- </div> 
+            <div class="form-buttons"> -->
+            <input type="submit" value="Dodaj" class="form-button-submit" />
+            <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
+            <!-- </div> -->
         </form>
     </main>
     <footer>

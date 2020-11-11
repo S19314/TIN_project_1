@@ -28,52 +28,52 @@
         <h1>Nowy zestaw elementa i komputera</h1>
         <form class="form">
             <!-- Добавить класс и в CSS добавить растояние между элементами-->
-            <div class="form-group">
-                <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
-                <input type="text" name="model" id="model" value="Jaguar 3000" />
-            </div>
-            <div class="form-group">
-                <label for="nazwaElementu">Nazwa elementu:<abbr title="required"
-                        aria-label="required">*</abbr></abbr></label>
-                <!-- <input type="text" name="opis" id="opis" /> -->
-                <input type="text" name="nazwaElementu" id="nazwaElementu"
-                    value="Gigabyte GeForce GTX 1660 SUPER OC 6GB GDDR6"></textarea>
-            </div>
+            <!-- <div class="form-group"> -->
+            <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+            <input type="text" name="model" id="model" value="Jaguar 3000" />
+            <!-- </div>
+            <div class="form-group"> -->
+            <label for="nazwaElementu">Nazwa elementu:<abbr title="required"
+                    aria-label="required">*</abbr></abbr></label>
+            <!-- <input type="text" name="opis" id="opis" /> -->
+            <input type="text" name="nazwaElementu" id="nazwaElementu"
+                value="Gigabyte GeForce GTX 1660 SUPER OC 6GB GDDR6"></textarea>
+            <!-- </div> -->
             <!-- <div class="form-group"> -->
             <!-- class="container-data-stworzenia"-->
-            <div class="form-group">
-                <label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
-                        aria-label="required"></abbr></label>
-                <input type="text" name="aktualnaTemperatura" value="56 stopni" />
-            </div>
-            <div class="form-group">
-                <label for="procentWykorzystanychZasobow">Procent wykorystanych zasobów:<abbr title="required"
-                        aria-label="required"></abbr></label>
-                <input type="text" name="procentWykorzystanychZasobow" value="15%" />
-            </div>
-            <div class="form-group">
-                <label for="aktualnaSzybkoscPrzekazaniaDanych">Aktualna szybkość przekazania danych:<abbr
-                        title="required" aria-label="required"></abbr></label>
-                <input type="text" name="aktualnaSzybkoscPrzekazaniaDanych" value="0.4 Mb/s" />
-            </div>
-            <div class="form-group">
-                <label for="typPolaczenia">Typ polączenia elementa z komputerem:<abbr title="required"
-                        aria-label="required">*</abbr></abbr></label>
+            <!-- <div class="form-group"> -->
+            <label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
+                    aria-label="required"></abbr></label>
+            <input type="text" name="aktualnaTemperatura" value="56 stopni" />
+            <!-- </div>
+            <div class="form-group"> -->
+            <label for="procentWykorzystanychZasobow">Procent wykorystanych zasobów:<abbr title="required"
+                    aria-label="required"></abbr></label>
+            <input type="text" name="procentWykorzystanychZasobow" value="15%" />
+            <!-- </div>
+            <div class="form-group"> -->
+            <label for="aktualnaSzybkoscPrzekazaniaDanych">Aktualna szybkość przekazania danych:<abbr title="required"
+                    aria-label="required"></abbr></label>
+            <input type="text" name="aktualnaSzybkoscPrzekazaniaDanych" value="0.4 Mb/s" />
+            <!-- </div>
+            <div class="form-group"> -->
+            <label for="typPolaczenia">Typ polączenia elementa z komputerem:<abbr title="required"
+                    aria-label="required">*</abbr></abbr></label>
 
-                <!--         <input type="text" name="typComputera" id="typComputera" /> -->
-                <select required name="typPolaczenia">
-                    <option disabled>Typ polaczenia</option>
-                    <option value="Bezprzewodowy">Bezprzewodowy</option>
-                    <option selected value="Przewodowy">Przewodowy</option>
-                </select>
-            </div>
+            <!--         <input type="text" name="typComputera" id="typComputera" /> -->
+            <select required name="typPolaczenia">
+                <option disabled>Typ polaczenia</option>
+                <option value="Bezprzewodowy">Bezprzewodowy</option>
+                <option selected value="Przewodowy">Przewodowy</option>
+            </select>
+            <!-- </div>
 
+            < !-- </div> -- >
+
+            <div class="form-buttons"> -->
+            <input type="submit" value="Dodaj" class="form-button-submit" />
+            <a href="zestaw-elementow-komputera-list.html" class="form-button-cancel">Anuluj</a>
             <!-- </div> -->
-
-            <div class="form-buttons">
-                <input type="submit" value="Dodaj" class="form-button-submit" />
-                <a href="zestaw-elementow-komputera-list.html" class="form-button-cancel">Anuluj</a>
-            </div>
         </form>
     </main>
     <footer>
