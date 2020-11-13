@@ -29,19 +29,28 @@
         <form class="form">
             <!-- Добавить класс и в CSS добавить растояние между элементами-->
             <!-- <div class="form-group"> -->
-            <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
-            <input type="text" name="model" id="model" value="" />
+            <label for="model">Model komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+            <select required name="model">
+                <option selected disabled>Model komputera</option>
+                <option value="Jaguar 3000">Jaguar 3000</option>
+                <option value="Actina by Corsair">Actina by Corsair</option>
+            </select>
+
             <!-- </div>
             <div class="form-group"> -->
             <label for="nazwaElementu">Nazwa elementu:<abbr title="required"
                     aria-label="required">*</abbr></abbr></label>
             <!-- <input type="text" name="opis" id="opis" /> -->
-            <input type="text" name="nazwaElementu" id="nazwaElementu"></textarea>
-            <!-- </div>
-            <!-- <div class="form-group"> -- >
-            <!-- class="container-data-stworzenia"-- >
-            <div class="form-group"> -->
-            <label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
+            <select required name="nazwaElementu">
+                <option selected disabled>Nazwa elementu</option>
+                <option value="Gigabyte GeForce GTX 1660 SUPER OC 6GB GDDR6">Gigabyte GeForce GTX 1660 SUPER OC 6GB
+                    GDDR6</option>
+                <option value="AMD Ryzen 5 3600 3,6GHz BOX (100-100000031BOX)">AMD Ryzen 5 3600 3,6GHz BOX
+                    (100-100000031BOX)</option>
+            </select>
+
+
+            </select><label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
                     aria-label="required"></abbr></label>
             <input type="text" name="aktualnaTemperatura" />
             <!-- </div>

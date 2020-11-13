@@ -267,6 +267,10 @@ footer{
     text-align: center;    
 }
 
+.form-opis-foto{
+    max-width: 25%;
+}
+
 @media all and (max-width: 720px){
     header{
         flex-direction: column;
