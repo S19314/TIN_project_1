@@ -7,6 +7,7 @@
     <title>Stan twojego komputera</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="shortcut icon" href="../../images/logo.png" type="image/png" />
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
 </head>
 
 <body>
@@ -27,20 +28,18 @@
     <main>
         <h1>Nowy zestaw elementa i komputera</h1>
         <form class="form">
-            <!-- Добавить класс и в CSS добавить растояние между элементами-->
-            <!-- <div class="form-group"> -->
+
             <label for="model">Model komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
             <select required name="model">
                 <option selected disabled>Model komputera</option>
                 <option value="Jaguar 3000">Jaguar 3000</option>
                 <option value="Actina by Corsair">Actina by Corsair</option>
             </select>
+            <span id="errorModel" class="errors-text"></span> <!-- Не был выбран -->
 
-            <!-- </div>
-            <div class="form-group"> -->
             <label for="nazwaElementu">Nazwa elementu:<abbr title="required"
                     aria-label="required">*</abbr></abbr></label>
-            <!-- <input type="text" name="opis" id="opis" /> -->
+            <span id="errorNazwaElementu" class="errors-text"></span> <!-- Типа, не был выбран-->
             <select required name="nazwaElementu">
                 <option selected disabled>Nazwa elementu</option>
                 <option value="Gigabyte GeForce GTX 1660 SUPER OC 6GB GDDR6">Gigabyte GeForce GTX 1660 SUPER OC 6GB
@@ -53,35 +52,28 @@
             </select><label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
                     aria-label="required"></abbr></label>
             <input type="text" name="aktualnaTemperatura" />
-            <!-- </div>
-            <div class="form-group"> -->
+
             <label for="procentWykorzystanychZasobow">Procent wykorystanych zasobów:<abbr title="required"
                     aria-label="required"></abbr></label>
             <input type="text" name="procentWykorzystanychZasobow" />
-            <!-- </div>
-            <div class="form-group"> -->
+            <span id="errorProcentWykorzystanychZasobow" class="errors-text"></span>
+
             <label for="aktualnaSzybkoscPrzekazaniaDanych">Aktualna szybkość przekazania danych:<abbr title="required"
                     aria-label="required"></abbr></label>
             <input type="text" name="aktualnaSzybkoscPrzekazaniaDanych" />
-            <!-- </div>
-            <div class="form-group"> -->
+
             <label for="typPolaczenia">Typ polączenia elementa z komputerem:<abbr title="required"
                     aria-label="required">*</abbr></abbr></label>
 
-            <!--         <input type="text" name="typComputera" id="typComputera" /> -->
             <select required name="typPolaczenia">
                 <option selected disabled>Typ polaczenia</option>
                 <option value="Bezprzewodowy">Bezprzewodowy</option>
                 <option value="Przewodowy">Przewodowy</option>
             </select>
-            <!-- </div> -->
 
-            <!-- </div> -->
-
-            <!-- <div class="form-buttons"> -->
             <input type="submit" value="Dodaj" class="form-button-submit" />
             <a href="zestaw-elementow-komputera-list.html" class="form-button-cancel">Anuluj</a>
-            <!-- </div> -->
+
         </form>
     </main>
     <footer>

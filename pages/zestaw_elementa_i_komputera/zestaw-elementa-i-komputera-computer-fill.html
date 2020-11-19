@@ -7,6 +7,7 @@
     <title>Stan twojego komputera</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="shortcut icon" href="../../images/logo.png" type="image/png" />
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,6 @@
     <main>
         <h1>Nowy zestaw elementa i komputera</h1>
         <form class="form">
-
             <label for="model">Model komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
             <select required name="model">
                 <option disabled>Model komputera</option>
@@ -35,11 +35,9 @@
                 <option value="Actina by Corsair">Actina by Corsair</option>
             </select>
 
-            <!-- </div>
-            <div class="form-group"> -->
             <label for="nazwaElementu">Nazwa elementu:<abbr title="required"
                     aria-label="required">*</abbr></abbr></label>
-            <!-- <input type="text" name="opis" id="opis" /> -->
+
             <select required name="nazwaElementu">
                 <option disabled>Nazwa elementu</option>
                 <option selected value="Gigabyte GeForce GTX 1660 SUPER OC 6GB GDDR6">Gigabyte GeForce GTX 1660 SUPER OC
@@ -49,25 +47,19 @@
                     (100-100000031BOX)</option>
             </select>
 
-            <!-- </div> -->
-            <!-- <div class="form-group"> -->
-            <!-- class="container-data-stworzenia"-->
-            <!-- <div class="form-group"> -->
             <label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
                     aria-label="required"></abbr></label>
             <input type="text" name="aktualnaTemperatura" value="56 stopni" />
-            <!-- </div>
-            <div class="form-group"> -->
+
             <label for="procentWykorzystanychZasobow">Procent wykorystanych zasobów:<abbr title="required"
                     aria-label="required"></abbr></label>
             <input type="text" name="procentWykorzystanychZasobow" value="15%" />
-            <!-- </div>
-            <div class="form-group"> -->
+            <span id="errorProcentWykorzystanychZasobow" class="errors-text"></span>
+
             <label for="aktualnaSzybkoscPrzekazaniaDanych">Aktualna szybkość przekazania danych:<abbr title="required"
                     aria-label="required"></abbr></label>
             <input type="text" name="aktualnaSzybkoscPrzekazaniaDanych" value="0.4 Mb/s" />
-            <!-- </div>
-            <div class="form-group"> -->
+
             <label for="typPolaczenia">Typ polączenia elementa z komputerem:<abbr title="required"
                     aria-label="required">*</abbr></abbr></label>
 
