@@ -52,7 +52,7 @@
 
             <label for="typKomputera">Typ Komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
 
-            <select required name="typKomputera">
+            <select required name="typKomputera" id="typKomputera">
                 <option>Typ Komputera</option>
                 <option selected value="Komputer stacjonarny">Komputer stacjonarny</option>
                 <option value="Monoblok">Monoblok</option>
@@ -65,7 +65,7 @@
             <span id="errorTypKomputera" class="errors-text"></span>
 
             <label for="datatime">Data stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
-            <input type="datetime-local" name="datatime" value="2017-06-01T08:30" />
+            <input type="datetime-local" name="datatime" id="dataStworzenia" value="2017-06-01T08:30" />
             <span id="errorDataStworzenia" class="errors-text"></span>
 
             <input type="submit" value="Zatwierdź" class="form-button-submit" />

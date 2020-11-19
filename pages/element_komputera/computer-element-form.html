@@ -27,8 +27,9 @@
 
     <main>
         <h1>Nowy element komputerowy</h1>
-        <form class="form">
-            <label for="nazwa">Nazwa:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+        <form class="form" novalidate onsubmit="return validateForm()">
+            <label for="nazwa">Nazwa:<abbr title="required" aria-label="required"
+                    class="errors-text">*</abbr></abbr></label>
             <input type="text" name="nazwa" id="nazwa" />
             <span id="errorNazwa" class="errors-text"></span>
 
