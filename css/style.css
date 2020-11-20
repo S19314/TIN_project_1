@@ -74,6 +74,18 @@ main h2{
     margin-bottom: 2rem;
 }
 
+.errors-text {
+    font-size: 0.85em;
+    line-height: 2.25rem;
+}
+
+.form input.errors-input,
+.form select.errors-input,
+.form textarea.errors-input {
+    border: 3px sloid #e74c3c;
+}
+
+
 .table-list{
     border-collapse: collapse;
     color: #2c3e50;
@@ -215,8 +227,9 @@ textarea{
 
 .form {
     margin-left: 2rem;
-    grid-template-columns: 150px 300px;
+    grid-template-columns: 150px 300px 1fr;
     row-gap: 1rem;
+    column-gap: 1rem;
 }
 
 .form select,
@@ -248,8 +261,11 @@ abbr[title='required']{
 
 .form-buttons{
     margin-top: 2rem;
+    /*
     grid-column-start: 1;
     grid-column-end: -1;
+    */
+    grid-column: 1 / span 2;
 }
 
 .form-textarea-opis{
@@ -304,12 +320,21 @@ footer{
         margin-left: unset;
     }
 
+    .form .errors-text{
+        margin-bottom: 1rem;
+    }
+
+    .form-buttons {
+        grid-column: 1 / span 1;
+    }
+    /*
     .form input[type="text"],
     .form input[type="number"],
     .form input[type="date"],
     .form select {
         margin-bottom: 1rem;
     }
+    */
 }
 
 @media all and (max-width: 400px){
