@@ -36,3 +36,18 @@ function checkTextLengthRange(value, min, max) {
 
     return true;
 }
+
+function checkIfDateAfter(value, compareTo) {
+    if (!value) {
+        return false;
+    }
+
+    if (!compareTo) {
+        return false;
+    }
+
+    const pattern = "(\d{4})-(\d{2})-(\d{2})";
+    if (!pattern.test(value)) {
+
+    }
+}

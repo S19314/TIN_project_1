@@ -28,7 +28,7 @@
 
     <main>
         <h1>Nowy komputer</h1>
-        <form class="form">
+        <form class="form" novalidate onsubmit="return validateForm();">
 
             <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
             <select name="model" id="model">
@@ -68,10 +68,11 @@
             <input type="datetime-local" name="datatime" id="dataStworzenia" />
             <span id="errorDataStworzenia" class="errors-text"></span>
             <!-- </div> -->
-
-            <input type="submit" value="Dodaj" class="form-button-submit" />
-            <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
-
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
+                <input type="submit" value="Dodaj" class="form-button-submit" />
+                <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
+            </div>
         </form>
     </main>
     <footer>

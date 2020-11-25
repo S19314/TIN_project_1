@@ -7,7 +7,9 @@
     <title>Stan twojego komputera</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="shortcut icon" href="../../images/logo.png" type="image/png" />
-    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/js/validationKomputerElement.js"></script>
+    <!-- ../../js/validationKomputerElement.js -->
 </head>
 
 <body>
@@ -27,7 +29,7 @@
 
     <main>
         <h1>Nowy element komputerowy</h1>
-        <form class="form" novalidate onsubmit="return validateForm()">
+        <form class="form" novalidate onsubmit="return validateForm();">
             <label for="nazwa">Nazwa:<abbr title="required" aria-label="required"
                     class="errors-text">*</abbr></abbr></label>
             <input type="text" name="nazwa" id="nazwa" />
@@ -35,14 +37,17 @@
 
             <label for="opis">Opis:<abbr title="required" aria-label="required">*</abbr></abbr></label>
             <textarea cols="40" rows="8" name="opis" id="opis"></textarea>
+            <span id="errorOpis" class="errors-text"></span>
 
             <label for="foto">Foto:<abbr title="required" aria-label="required">*</abbr></abbr></label>
-            <input type="file" name="foto" id="foto" />
+            <input type="file" name="foto" id="fotoInput" />
+            <span id="errorFotoInput" class="errors-text"></span>
 
-
-            <input type="submit" value="Dodaj" class="form-button-submit" />
-            <a href="computer-element-list.html" class="form-button-cancel">Anuluj</a>
-
+            <div class="form-buttons">
+                <p id="errorSummary" class="errors-text"></p>
+                <input type="submit" value="Dodaj" class="form-button-submit" />
+                <a href="computer-element-list.html" class="form-button-cancel">Anuluj</a>
+            </div>
         </form>
     </main>
     <footer>

@@ -10,6 +10,8 @@ function validateForm() {
     const errorTypKomputera = document.getElementById('errorTypKomputera');
     const errorDataStworzenia = document.getElementById('errorDataStworzenia');
 
+    const errorSummary = document.getElementById('errorSummary');
+
     let valid = true;
 
     if (!checkRequired(modelKomputeraInput.value)) {
