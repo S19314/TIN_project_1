@@ -10,16 +10,19 @@ function validateForm() {
 
     const errorSummary = document.getElementById('errorSummary');
 
+    resetErrors([nazwaInput, opisInput, fotoInputInput], [errorNazwa, errorOpis, errorFotoInput], errorSummary);
+
     let valid = true;
 
+    // event.preventDefault(); // Usuń 
     if (!checkRequired(nazwaInput.value)) {
         valid = false;
         nazwaInput.classList.add("error-input");
-        errorNazwaInput.innerText = "Pole jest wymagane";
+        errorNazwa.innerText = "Pole jest wymagane";
     } else if (!checkTextLengthRange(nazwaInput.value, 2, 60)) {
         valid = false;
         nazwaInput.classList.add("error-input");
-        errorNazwaInput.innerText = "Pole powinno zawierać od 2 do 60 znaków";
+        errorNazwa.innerText = "Pole powinno zawierać od 2 do 60 znaków";
     }
 
     if (!checkRequired(opisInput.value)) {

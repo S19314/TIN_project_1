@@ -11,6 +11,15 @@ function validateForm() {
     const errorDataStworzenia = document.getElementById('errorDataStworzenia');
 
     const errorSummary = document.getElementById('errorSummary');
+    /*
+    event.preventDefault(); // Usuń 
+    errorSummary.innerText = "ala ma kota 2 ";
+    return false;
+    */
+    resetErrors(
+        [modelInput, systemOperacyjnyInput, typKomputeraInput, dataStworzeniaInput],
+        [errorModel, errorSystemOperacyjny, errorTypKomputera, errorDataStworzenia],
+        errorSummary);
 
     let valid = true;
 

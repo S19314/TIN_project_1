@@ -14,8 +14,20 @@ function validateForm() {
     const errorAktualnaSzybkoscPrzekazaniaDanych = document.getElementById('errorAktualnaSzybkoscPrzekazaniaDanych');
     const errorTypPolaczenia = document.getElementById('typPolaczenia');
 
-
     const errorSummary = document.getElementById('errorSummary');
+    /*
+        event.preventDefault(); // Usuń  DOWN
+        errorSummary.innerText = "Ala ma kota 1 ";
+        return false;
+        // UP
+        */
+
+    resetErrors(
+        [modelInput, nazwaElementuInput, aktualnaTemperaturaInput, procentWykorzystanychZasobowInput,
+            aktualnaSzybkoscPrzekazaniaDanychInput, typPoloczeniaInput],
+        [errorModel, errorNazwaElementu, errorAktualnaTemperatura, errorProcentWykorzystanychZasobow,
+            errorAktualnaSzybkoscPrzekazaniaDanych, errorTypPolaczenia],
+        errorSummary);
 
     let valid = true;
 
