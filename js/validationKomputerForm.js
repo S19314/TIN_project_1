@@ -16,14 +16,16 @@ function validateForm() {
     errorSummary.innerText = "ala ma kota 2 ";
     return false;
     */
+    errorSummary.innerText = "ala ma kota 2 ";
+    return false;
     resetErrors(
         [modelInput, systemOperacyjnyInput, typKomputeraInput, dataStworzeniaInput],
         [errorModel, errorSystemOperacyjny, errorTypKomputera, errorDataStworzenia],
         errorSummary);
 
-    let valid = true;
+    var valid = true;
 
-    if (!checkRequired(modelKomputeraInput.value)) {
+    if (!checkRequired(modelInput.value)) {
         valid = false;
         modelInput.classList.add("error-input");
         errorModel.innerText = "Pole jest wymagane";

@@ -1,1 +1,3 @@
 1. Изменить БД: Всё фотографии не типа blob, а типа string. Они будут содержать ссылку на фото( для экономии памяти моего ноута [доги плачуший], могу в инете найти фотографии аидеокарты/и т.д. взять ссылку и закинуть в БД).
+2. Pytanie jeden: Czy może być tak, że przez to że połe jest puste, program nic nie wysyła/nie wywołuje funkcje validateForm() 
+    - i dlatego nie mamy info o błędnym formularzu?

@@ -12,9 +12,8 @@ function validateForm() {
 
     resetErrors([nazwaInput, opisInput, fotoInputInput], [errorNazwa, errorOpis, errorFotoInput], errorSummary);
 
-    let valid = true;
+    var valid = true;
 
-    // event.preventDefault(); // Usuń 
     if (!checkRequired(nazwaInput.value)) {
         valid = false;
         nazwaInput.classList.add("error-input");
