@@ -30,19 +30,18 @@
         <h1>Nowy zestaw elementa i komputera</h1>
         <form class="form" novalidate onsubmit="return validateForm();">
 
-            <label for="model">Model komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+            <label for="model">Model komputera:<abbr title="required" aria-label="required">*</abbr></label>
             <select required name="model" id="model">
-                <option selected disabled>Model komputera</option>
+                <option value="" selected disabled>Model komputera</option>
                 <option value="Jaguar 3000">Jaguar 3000</option>
                 <option value="Actina by Corsair">Actina by Corsair</option>
             </select>
             <span id="errorModel" class="errors-text"></span> <!-- Не был выбран -->
 
-            <label for="nazwaElementu">Nazwa elementu:<abbr title="required"
-                    aria-label="required">*</abbr></abbr></label>
+            <label for="nazwaElementu">Nazwa elementu:<abbr title="required" aria-label="required">*</abbr></label>
 
             <select required name="nazwaElementu" id="nazwaElementu">
-                <option selected disabled>Nazwa elementu</option>
+                <option value="" selected disabled>Nazwa elementu</option>
                 <option value="Gigabyte GeForce GTX 1660 SUPER OC 6GB GDDR6">Gigabyte GeForce GTX 1660 SUPER OC 6GB
                     GDDR6</option>
                 <option value="AMD Ryzen 5 3600 3,6GHz BOX (100-100000031BOX)">AMD Ryzen 5 3600 3,6GHz BOX
@@ -52,7 +51,7 @@
 
 
 
-            </select><label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
+            <label for="aktualnaTemperatura">Aktualna temperatura:<abbr title="required"
                     aria-label="required">*</abbr></label>
             <input type="text" name="aktualnaTemperatura" id="aktualnaTemperatura" />
             <span id="errorAktualnaTemperatura" class="errors-text"></span>
@@ -68,16 +67,16 @@
             <span id="errorAktualnaSzybkoscPrzekazaniaDanych" class="errors-text"></span>
 
             <label for="typPolaczenia">Typ polączenia elementa z komputerem:<abbr title="required"
-                    aria-label="required">*</abbr></abbr></label>
-            <select required name="typPolaczenia" id="typPolaczenia">
-                <option selected disabled>Typ polaczenia</option>
+                    aria-label="required">*</abbr></label>
+            <select required name="typPolaczenia" id="typPoloczenia">
+                <option value="" selected disabled>Typ polaczenia</option>
                 <option value="Bezprzewodowy">Bezprzewodowy</option>
                 <option value="Przewodowy">Przewodowy</option>
             </select>
             <span id="errorTypPolaczenia" class="errors-text"></span>
 
             <div class="form-buttons">
-                <p id="errorsSummary" class="errors-text"></p>
+                <p id="errorSummary" class="errors-text"></p>
                 <input type="submit" value="Dodaj" class="form-button-submit" />
                 <a href="zestaw-elementow-komputera-list.html" class="form-button-cancel">Anuluj</a>
             </div>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="shortcut icon" href="../../images/logo.png" type="image/png" />
     <script type="application/javascript" src="../../js/validationCommon.js"></script>
-    <script type="application/javascript" src="js/validationKomputerForm.js"></script>
+    <script type="application/javascript" src="../../js/validationKomputerForm.js"></script>
 </head>
 
 <body>
@@ -30,29 +30,42 @@
         <h1>Nowy komputer</h1>
         <form class="form" novalidate onsubmit="return validateForm();">
 
-            <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></abbr></label>
+            <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></label>
+            <!--  Сделать inputField длинее; Мб, бахнуть класс и через CSS. -->
+            <!-- Подправить растояние между полем и текстом, cделать ближе к соответсвенному полю и дальше от другого поля-->
+            <input list="model" placeholder="Model komputera" id="valueModel" />
+            <datalist name="model" id="model">
+                <option selected disabled>Model komputera</option>
+                <option value="Jaguar 3000">Jaguar 3000</option>
+                <option value="Actina by Corsair">Actina by Corsair</option>
+                <option value="Acer Aspire XC-330 AMD">Acer Aspire XC-330 AMD </option>
+            </datalist>
+
+
+            <!-- 
             <select name="model" id="model">
                 <option selected disabled>Model komputera</option>
                 <option value="Jaguar 3000">Jaguar 3000</option>
                 <option value="Actina by Corsair">Actina by Corsair</option>
                 <option value="Acer Aspire XC-330 AMD">Acer Aspire XC-330 AMD </option>
             </select>
+            -->
             <span id="errorModel" class="errors-text"></span>
 
             <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
-                    aria-label="required">*</abbr></abbr></label>
-            <select name="systemOperacyjny" id="systemOperacyjny">
-                <option selected disabled>System operacyjny</option>
+                    aria-label="required">*</abbr></label>
+            <input list="systemOperacyjny" placeholder="System operacyjny" id="systemOperacyjnyInput" />
+            <datalist name="systemOperacyjny" id="systemOperacyjny">
                 <option value="Tornado 6.1.0">Tornado 6.1.0</option>
                 <option value="Windows 7">Windows 7</option>
                 <option value="Windows 10">Windows 10</option>
                 <option value="Windows NT 3.5 Server">Windows NT 3.5 Server</option>
-            </select>
+            </datalist>
             <span id="errorSystemOperacyjny" class="errors-text"></span>
 
-            <label for="typKomputera">Typ Komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
-            <select required name="typKomputera" id="typKomputera">
-                <option selected disabled>Typ Komputera</option>
+            <label for="typKomputera">Typ Komputera:<abbr title="required" aria-label="required">*</abbr></label>
+            <input list="typKomputera" placeholder="Typ Komputera" id="typKomputeraInput" />
+            <datalist required name="typKomputera" id="typKomputera">
                 <option value="Komputer stacjonarny">Komputer stacjonarny</option>
                 <option value="Monoblok">Monoblok</option>
                 <option value="Laptop">Laptop</option>
@@ -60,16 +73,17 @@
                 <option value="Tablet PC">Tablet PC</option>
                 <option value="Nettop">Nettop</option>
                 <option value="Komputer kieszonkowe">Komputer kieszonkowe</option>
-            </select>
+            </datalist>
             <span id="errorTypKomputera" class="errors-text"></span>
 
-            <!-- <div> -->
+            <!-- <div > -->
             <label for="datatime">Data stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
-            <input type="datetime-local" name="datatime" id="dataStworzenia" />
+            <!-- Сделать date. day month year Год сам вписываешь. А на момент правильнотости проверяет JS -->
+            <!--            <input type="datetime-local" name="datatime" id="dataStworzenia" /> -->
             <span id="errorDataStworzenia" class="errors-text"></span>
             <!-- </div> -->
             <div class="form-buttons">
-                <p id="errorsSummary" class="errors-text"></p>
+                <p id="errorSummary" class="errors-text"></p>
                 <input type="submit" value="Dodaj" class="form-button-submit" />
                 <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
             </div>
