@@ -31,42 +31,56 @@
         <form class="form" novalidate onsubmit="return validateForm();">
 
             <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></label>
-            <select name="model" id="model">
-                <option>Model komputera</option>
-                <option selected value="Jaguar 3000">Jaguar 3000</option>
+            <input list="model" placeholder="Model komputera" id="valueModel" value="Jaguar 3000" />
+            <datalist name="model" id="model">
+                <option disabled>Model komputera</option>
+                <option value="Jaguar 3000">Jaguar 3000</option>
                 <option value="Actina by Corsair">Actina by Corsair</option>
                 <option value="Acer Aspire XC-330 AMD">Acer Aspire XC-330 AMD </option>
-            </select>
+            </datalist>
             <span id="errorModel" class="errors-text"></span>
 
             <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
                     aria-label="required">*</abbr></label>
-            <select name="systemOperacyjny" id="systemOperacyjny">
-                <option>System operacyjny</option>
-                <option selected value="Tornado 6.1.0">Tornado 6.1.0</option>
+            <input list="systemOperacyjny" placeholder="System operacyjny" id="systemOperacyjnyInput"
+                value="Tornado 6.1.0" />
+            <datalist name="systemOperacyjny" id="systemOperacyjny">
+                <option value="Tornado 6.1.0">Tornado 6.1.0</option>
                 <option value="Windows 7">Windows 7</option>
                 <option value="Windows 10">Windows 10</option>
                 <option value="Windows NT 3.5 Server">Windows NT 3.5 Server</option>
-            </select>
+            </datalist>
             <span id="errorSystemOperacyjny" class="errors-text"></span>
 
-            <label for="typKomputera">Typ Komputera:<abbr title="required" aria-label="required">*</abbr></abbr></label>
-
-            <select required name="typKomputera" id="typKomputera">
-                <option>Typ Komputera</option>
-                <option selected value="Komputer stacjonarny">Komputer stacjonarny</option>
+            <label for="typKomputera">Typ Komputera:<abbr title="required" aria-label="required">*</abbr></label>
+            <input list="typKomputera" placeholder="Typ Komputera" id="typKomputeraInput"
+                value="Komputer stacjonarny" />
+            <datalist required name="typKomputera" id="typKomputera">
+                <option value="Komputer stacjonarny">Komputer stacjonarny</option>
                 <option value="Monoblok">Monoblok</option>
                 <option value="Laptop">Laptop</option>
                 <option value="Netbook">Netbook</option>
                 <option value="Tablet PC">Tablet PC</option>
                 <option value="Nettop">Nettop</option>
                 <option value="Komputer kieszonkowe">Komputer kieszonkowe</option>
-            </select>
+            </datalist>
             <span id="errorTypKomputera" class="errors-text"></span>
 
-            <label for="datatime">Data stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
-            <input type="datetime-local" name="datatime" id="dataStworzenia" value="2017-06-01T08:30" />
-            <span id="errorDataStworzenia" class="errors-text"></span>
+            <!-- <div > -->
+            <label for="dayStworzenia">Dzień stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
+            <!-- Сделать date. day month year Год сам вписываешь. А на момент правильнотости проверяет JS 
+            -->
+            <input type="text" name="dayStworzenia" id="dayStworzenia" value="01">
+            <span id="errorDayStworzenia" class="errors-text"></span>
+
+            <label for="monthStworzenia">Mięsiąc stworzenia:<abbr title="required"
+                    aria-label="required">*</abbr></label>
+            <input type="text" name="monthStworzenia" id="monthStworzenia" value="06">
+            <span id="errorMonthStworzenia" class="errors-text"></span>
+
+            <label for="yearStworzenia">Rok stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="yearStworzenia" id="yearStworzenia" value="2017">
+            <span id="errorYearStworzenia" class="errors-text"></span>
 
             <input type="submit" value="Zatwierdź" class="form-button-submit" />
             <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
