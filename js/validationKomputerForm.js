@@ -4,12 +4,12 @@ function validateForm() {
     const modelInput = document.getElementById('valueModel'); // 'model');
     const systemOperacyjnyInput = document.getElementById('systemOperacyjnyInput')
     const typKomputeraInput = document.getElementById('typKomputeraInput');
-    const dataStworzeniaInput = document.getElementById('dataStworzeniaInput');
+    //  const dataStworzeniaInput = document.getElementById('dataStworzeniaInput');
 
     const errorModel = document.getElementById('errorModel');
     const errorSystemOperacyjny = document.getElementById('errorSystemOperacyjny');
     const errorTypKomputera = document.getElementById('errorTypKomputera');
-    const errorDataStworzenia = document.getElementById('errorDataStworzenia');
+    //    const errorDataStworzenia = document.getElementById('errorDataStworzenia');
 
     const errorSummary = document.getElementById('errorSummary');
 
@@ -24,8 +24,10 @@ function validateForm() {
     return false;
         */
     resetErrors(
-        [modelInput, systemOperacyjnyInput, typKomputeraInput, dataStworzeniaInput], // Тут null 
-        [errorModel, errorSystemOperacyjny, errorTypKomputera, errorDataStworzenia],
+        [modelInput, systemOperacyjnyInput, typKomputeraInput], // Тут null 
+        [errorModel, errorSystemOperacyjny, errorTypKomputera],
+        //    [modelInput, systemOperacyjnyInput, typKomputeraInput, dataStworzeniaInput], // Тут null 
+        //        [errorModel, errorSystemOperacyjny, errorTypKomputera, errorDataStworzenia],
         errorSummary);
 
     var valid = true;

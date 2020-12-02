@@ -77,11 +77,22 @@
             <span id="errorTypKomputera" class="errors-text"></span>
 
             <!-- <div > -->
-            <label for="datatime">Data stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
+            <label for="dayStworzenia">Dzień stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
             <!-- Сделать date. day month year Год сам вписываешь. А на момент правильнотости проверяет JS -->
-            <!--            <input type="datetime-local" name="datatime" id="dataStworzenia" /> -->
-            <span id="errorDataStworzenia" class="errors-text"></span>
-            <!-- </div> -->
+            <input type="text" name="dayStworzenia" id="dayStworzenia">
+            <span id="errorDayStworzenia" class="errors-text"></span>
+
+            <label for="monthStworzenia">Mięsiąc stworzenia:<abbr title="required"
+                    aria-label="required">*</abbr></label>
+            <input type="text" name="monthStworzenia" id="monthStworzenia">
+            <span id="errorMonthStworzenia" class="errors-text"></span>
+
+            <label for="yearStworzenia">Rok stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="yearStworzenia" id="yearStworzenia">
+            <span id="errorYearStworzenia" class="errors-text"></span>
+
+
+
             <div class="form-buttons">
                 <p id="errorSummary" class="errors-text"></p>
                 <input type="submit" value="Dodaj" class="form-button-submit" />
