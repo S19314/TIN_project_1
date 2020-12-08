@@ -289,6 +289,13 @@ footer{
     max-width: 25%;
 }
 
+
+.p-opis{
+    border: 1px solid black;
+    border-radius: 0.3em;
+    padding: 0.5rem;
+    background-color: white;
+}
 @media all and (max-width: 720px){
     header{
         flex-direction: column;
