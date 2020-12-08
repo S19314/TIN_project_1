@@ -68,11 +68,13 @@
 
             <label for="typPolaczenia">Typ polączenia elementa z komputerem:<abbr title="required"
                     aria-label="required">*</abbr></label>
-            <select required name="typPolaczenia" id="typPoloczenia">
-                <option value="" selected disabled>Typ polaczenia</option>
+            <input type="datalist" list="typPolaczenia" placeholder="Typ Polaczenia" id="typPolaczeniaInput" />
+            <datalist required name="typPolaczenia" id="typPolaczenia">
                 <option value="Bezprzewodowy">Bezprzewodowy</option>
                 <option value="Przewodowy">Przewodowy</option>
-            </select>
+            </datalist>
+            <span id="errorTypPolaczenia" class="errors-text"></span>
+
             <span id="errorTypPolaczenia" class="errors-text"></span>
 
             <div class="form-buttons">

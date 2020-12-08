@@ -1,7 +1,5 @@
 function resetErrors(inputs, errorTexts, errorInfo) {
     for (let i = 0; i < inputs.length; i++) {
-        console.log("Index :");
-        console.log(i);
         inputs[i].classList.remove("error_input"); // Możliwe tutaj musze być "error-input"? // Изменил с error_input, на error-input
     }
 
@@ -48,8 +46,44 @@ function checkIfDateAfter(value, compareTo) {
         return false;
     }
 
-    const pattern = "(\d{4})-(\d{2})-(\d{2})";
-    if (!pattern.test(value)) {
+    const valueDate = new Date(value);
+    // valueDate = valueDate.setDate(value);
+    let compareToDate = new Date(compareTo);
+    // compareToDate = compareToDate.setDate(compareTo);
 
+    if (valueDate.getTime() > compareToDate.getTime()) { // Верно ли сравнивает? Мб сравнивает часы в сутках ( от 0 до 23 )
+        return false;
     }
+
+    return true;
+}
+
+function checkNumber(value) {
+    if (!value) {
+        return false;
+    }
+
+    if (isNaN(value)) {
+        return false;
+    }
+
+    return true;
+}
+
+function checkNumberRange(value, min, max) {
+    if (!value) {
+        return false;
+    }
+    if (isNaN(value)) {
+        return false;
+    }
+    value = parseFloat(value);
+    if (value < min) {
+        return false;
+    }
+    if (value > max) {
+        return false;
+    }
+
+    return true;
 }

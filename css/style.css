@@ -237,12 +237,13 @@ textarea{
 .form input[type="text"],
 .form input[type="number"],
 .form input[type="date"],
-.form input[type="email"]{
+.form input[type="email"],
+.form input[type="datalist"]{
     border: 1px solid #7f8c8d;
     color: #2c3e50;
     border-radius: 5px;
     padding: 0.5rem;
-    width: 100%;
+    width: 100%;    
 }
 
 .form label{

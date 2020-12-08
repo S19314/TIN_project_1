@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="shortcut icon" href="../../images/logo.png" type="image/png" />
     <script type="application/javascript" src="../../js/validationCommon.js"></script>
-    <script type="application/javascript" src="js/validationKomputerForm.js"></script>
+    <script type="application/javascript" src="../../js/validationKomputerForm.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
         <form class="form" novalidate onsubmit="return validateForm();">
 
             <label for="model">Model:<abbr title="required" aria-label="required">*</abbr></label>
-            <input list="model" placeholder="Model komputera" id="valueModel" value="Jaguar 3000" />
+            <input type="datalist" list="model" placeholder="Model komputera" id="valueModel" value="Jaguar 3000" />
             <datalist name="model" id="model">
                 <option disabled>Model komputera</option>
                 <option value="Jaguar 3000">Jaguar 3000</option>
@@ -42,7 +42,7 @@
 
             <label for="systemOperacyjny">Zainstalowany system operacyjny:<abbr title="required"
                     aria-label="required">*</abbr></label>
-            <input list="systemOperacyjny" placeholder="System operacyjny" id="systemOperacyjnyInput"
+            <input type="datalist" list="systemOperacyjny" placeholder="System operacyjny" id="systemOperacyjnyInput"
                 value="Tornado 6.1.0" />
             <datalist name="systemOperacyjny" id="systemOperacyjny">
                 <option value="Tornado 6.1.0">Tornado 6.1.0</option>
@@ -53,7 +53,7 @@
             <span id="errorSystemOperacyjny" class="errors-text"></span>
 
             <label for="typKomputera">Typ Komputera:<abbr title="required" aria-label="required">*</abbr></label>
-            <input list="typKomputera" placeholder="Typ Komputera" id="typKomputeraInput"
+            <input type="datalist" list="typKomputera" placeholder="Typ Komputera" id="typKomputeraInput"
                 value="Komputer stacjonarny" />
             <datalist required name="typKomputera" id="typKomputera">
                 <option value="Komputer stacjonarny">Komputer stacjonarny</option>
@@ -70,21 +70,23 @@
             <label for="dayStworzenia">Dzień stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
             <!-- Сделать date. day month year Год сам вписываешь. А на момент правильнотости проверяет JS 
             -->
-            <input type="text" name="dayStworzenia" id="dayStworzenia" value="01">
+            <input type="text" name="dayStworzenia" id="dayStworzeniaInput" value="01">
             <span id="errorDayStworzenia" class="errors-text"></span>
 
             <label for="monthStworzenia">Mięsiąc stworzenia:<abbr title="required"
                     aria-label="required">*</abbr></label>
-            <input type="text" name="monthStworzenia" id="monthStworzenia" value="06">
+            <input type="text" name="monthStworzenia" id="monthStworzeniaInput" value="06">
             <span id="errorMonthStworzenia" class="errors-text"></span>
 
             <label for="yearStworzenia">Rok stworzenia:<abbr title="required" aria-label="required">*</abbr></label>
-            <input type="text" name="yearStworzenia" id="yearStworzenia" value="2017">
+            <input type="text" name="yearStworzenia" id="yearStworzeniaInput" value="2017">
             <span id="errorYearStworzenia" class="errors-text"></span>
 
-            <input type="submit" value="Zatwierdź" class="form-button-submit" />
-            <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
-
+            <div class="form-buttons">
+                <p id="errorSummary" class="errors-text"></p>
+                <input type="submit" value="Zatwierdź" class="form-button-submit" />
+                <a href="computer-list.html" class="form-button-cancel">Anuluj</a>
+            </div>
         </form>
     </main>
     <footer>
