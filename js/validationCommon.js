@@ -37,7 +37,7 @@ function checkTextLengthRange(value, min, max) {
     return true;
 }
 
-function checkIfDateAfter(value, compareTo) {
+function checkDateIfAfter(value, compareTo) {
     if (!value) {
         return false;
     }
@@ -46,12 +46,13 @@ function checkIfDateAfter(value, compareTo) {
         return false;
     }
 
+
     const valueDate = new Date(value);
     // valueDate = valueDate.setDate(value);
-    let compareToDate = new Date(compareTo);
+    const compareToDate = new Date(compareTo);
     // compareToDate = compareToDate.setDate(compareTo);
 
-    if (valueDate.getTime() > compareToDate.getTime()) { // Верно ли сравнивает? Мб сравнивает часы в сутках ( от 0 до 23 )
+    if (valueDate.getTime() <= compareToDate.getTime()) { // Верно ли сравнивает? Мб сравнивает часы в сутках ( от 0 до 23 )
         return false;
     }
 
@@ -86,4 +87,13 @@ function checkNumberRange(value, min, max) {
     }
 
     return true;
+}
+
+
+function checkDate(value) {
+    if (!value) {
+        return false;
+    }
+    const pattern = /(\d{4})-(\d{2})-(\d{2})/;
+    return pattern.test(value);
 }

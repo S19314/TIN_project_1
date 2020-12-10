@@ -33,13 +33,13 @@ function validateForm() {
         opisInput.classList.add("error-input");
         errorOpis.innerText = "Pole powinno zawierać od 2 do 1000 znaków";
     }
-
+    /*
     if (!checkRequired(fotoInputInput.value)) {
         valid = false;
         fotoInputInput.classList.add("error-input");
         errorFotoInput.innerText = "Pole jest wymagane";
     }
-
+*/
     if (!valid) {
         errorSummary.innerText = "Formularz zawiera błędy";
     }
